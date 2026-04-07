@@ -1,0 +1,3 @@
+[console_scripts]
+vibe-sanitizer = vibe_sanitizer.cli:main
+vibe_sanitizer = vibe_sanitizer.cli:main

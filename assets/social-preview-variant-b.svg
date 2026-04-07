@@ -1,0 +1,43 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgB" x1="64" y1="74" x2="1188" y2="612" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1524"/>
+      <stop offset="1" stop-color="#15263C"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 62px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #F4F7FB; }
+      .sub { font: 400 22px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #C3D0E0; }
+      .mono { font: 600 20px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #E8EEF8; }
+      .mono-dim { font: 500 18px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #B1C4D8; }
+      .cap { font: 700 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 0.08em; fill: #77D4FF; }
+    </style>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bgB)"/>
+  <rect x="72" y="72" width="1136" height="496" rx="34" fill="#0F1726" stroke="#253751"/>
+
+  <text x="120" y="148" class="title">vibe_sanitizer</text>
+  <text x="120" y="188" class="sub">One tool, three jobs: scan, sanitize, export.</text>
+
+  <rect x="120" y="242" width="316" height="236" rx="24" fill="#101E31" stroke="#27405E"/>
+  <text x="148" y="286" class="cap">SCAN</text>
+  <text x="148" y="324" class="mono">--scope working-tree</text>
+  <text x="148" y="356" class="mono-dim">Check files that are not ignored.</text>
+  <text x="148" y="404" class="mono">--scope staged</text>
+  <text x="148" y="436" class="mono-dim">Check what is about to be committed.</text>
+
+  <rect x="482" y="242" width="316" height="236" rx="24" fill="#101E31" stroke="#27405E"/>
+  <text x="510" y="286" class="cap">SANITIZE</text>
+  <text x="510" y="324" class="mono">--mode in-place</text>
+  <text x="510" y="356" class="mono-dim">Rewrite only safe findings.</text>
+  <rect x="510" y="394" width="92" height="28" rx="14" fill="#143B2C"/>
+  <text x="529" y="413" class="mono-dim" fill="#62E89E">FIXABLE</text>
+
+  <rect x="844" y="242" width="316" height="236" rx="24" fill="#101E31" stroke="#27405E"/>
+  <text x="872" y="286" class="cap">EXPORT</text>
+  <text x="872" y="324" class="mono">--output ../safe-share</text>
+  <text x="872" y="356" class="mono-dim">Make a separate sanitized copy.</text>
+  <text x="872" y="404" class="mono">--init-git</text>
+  <text x="872" y="436" class="mono-dim">Optionally create a fresh repo.</text>
+
+  <text x="120" y="532" class="sub">Find secrets and machine paths before commit or before sharing a repository.</text>
+</svg>

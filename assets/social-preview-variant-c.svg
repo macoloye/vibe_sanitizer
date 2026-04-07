@@ -1,0 +1,40 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgC" x1="44" y1="44" x2="1212" y2="612" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1220"/>
+      <stop offset="1" stop-color="#132A42"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 62px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #F5F7FB; }
+      .sub { font: 400 24px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #C0D0E1; }
+      .mono { font: 600 20px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #E8EEF8; }
+      .mono-dim { font: 500 18px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #AFC4D8; }
+      .cap { font: 700 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 0.08em; fill: #7DD5FF; }
+    </style>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bgC)"/>
+  <circle cx="150" cy="110" r="120" fill="#16395D" fill-opacity="0.24"/>
+  <circle cx="1148" cy="548" r="180" fill="#173A60" fill-opacity="0.18"/>
+
+  <text x="94" y="118" class="title">vibe_sanitizer</text>
+  <text x="94" y="158" class="sub">Git-aware sanitization for repos and agent workflows.</text>
+
+  <rect x="94" y="222" width="510" height="270" rx="26" fill="#0E1728" stroke="#243A57"/>
+  <text x="126" y="264" class="cap">AGENT SUPPORT</text>
+  <text x="126" y="304" class="mono">Codex</text>
+  <text x="126" y="338" class="mono">Claude Code</text>
+  <text x="126" y="372" class="mono">Local CLI agents through skills</text>
+  <text x="126" y="426" class="mono-dim">Use the bundled skill to choose scan scope,</text>
+  <text x="126" y="456" class="mono-dim">report safely, and export sanitized copies.</text>
+
+  <rect x="646" y="222" width="540" height="270" rx="26" fill="#0E1728" stroke="#243A57"/>
+  <text x="678" y="264" class="cap">MAIN IDEA</text>
+  <text x="678" y="306" class="mono">scan --scope staged</text>
+  <text x="678" y="336" class="mono-dim">Find sensitive data before commit.</text>
+  <text x="678" y="388" class="mono">sanitize --mode in-place</text>
+  <text x="678" y="418" class="mono-dim">Fix only safe findings in the current repo.</text>
+  <text x="678" y="470" class="mono">export --output ../safe-share</text>
+  <text x="678" y="500" class="mono-dim">Create a separate sanitized copy for sharing.</text>
+
+  <text x="94" y="566" class="sub">For AI-assisted repositories that may contain secrets, tokens, and local machine paths.</text>
+</svg>

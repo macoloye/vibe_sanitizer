@@ -1,0 +1,64 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="46" y1="28" x2="1230" y2="604" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1220"/>
+      <stop offset="0.5" stop-color="#0F1E33"/>
+      <stop offset="1" stop-color="#13263D"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="180" y1="180" x2="1028" y2="528" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E1728"/>
+      <stop offset="1" stop-color="#111C2F"/>
+    </linearGradient>
+    <filter id="shadow" x="120" y="120" width="1040" height="420" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <style>
+      .title { font: 700 72px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #F4F7FB; }
+      .tagline { font: 400 30px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #B9C5D8; }
+      .label { font: 700 19px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 0.08em; fill: #7FD8FF; }
+      .mono { font: 600 24px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #E8EEF8; }
+      .mono-dim { font: 500 22px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #B9C5D8; }
+      .pill { font: 700 16px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .small { font: 500 22px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #C5D2E3; }
+    </style>
+  </defs>
+
+  <rect width="1280" height="640" rx="0" fill="url(#bg)"/>
+  <circle cx="180" cy="106" r="150" fill="#123158" fill-opacity="0.24"/>
+  <circle cx="1146" cy="576" r="188" fill="#123158" fill-opacity="0.2"/>
+  <circle cx="1088" cy="118" r="82" fill="#1E8FFF" fill-opacity="0.12"/>
+
+  <text x="96" y="122" class="title">vibe_sanitizer</text>
+  <text x="96" y="170" class="tagline">Git-aware secret and path sanitizer for repos, agents, and safe-share workflows.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="150" y="188" width="980" height="304" rx="22" fill="url(#panel)" stroke="#23344F"/>
+  </g>
+
+  <rect x="150" y="188" width="980" height="44" rx="22" fill="#0A1220"/>
+  <circle cx="182" cy="210" r="7" fill="#FF5F57"/>
+  <circle cx="204" cy="210" r="7" fill="#FEBC2E"/>
+  <circle cx="226" cy="210" r="7" fill="#28C840"/>
+  <text x="260" y="218" class="mono-dim">terminal / repo scan</text>
+
+  <text x="186" y="282" class="label">SCAN</text>
+  <text x="186" y="320" class="mono">vibe_sanitizer scan --scope staged</text>
+
+  <rect x="186" y="344" width="86" height="28" rx="14" fill="#4A1115"/>
+  <text x="199" y="364" class="pill" fill="#FF7B72">HIGH</text>
+  <text x="294" y="364" class="mono-dim">openai_key</text>
+  <text x="474" y="364" class="mono-dim">app.py:12</text>
+  <text x="608" y="364" class="mono">sk-***3456</text>
+
+  <rect x="186" y="390" width="104" height="28" rx="14" fill="#5B430E"/>
+  <text x="192" y="410" class="pill" fill="#FFD866">MEDIUM</text>
+  <text x="324" y="410" class="mono-dim">home_path</text>
+  <text x="492" y="410" class="mono-dim">README.md:43</text>
+  <text x="690" y="410" class="mono">/Users/.../secrets.txt</text>
+
+  <rect x="186" y="436" width="126" height="28" rx="14" fill="#143B2C"/>
+  <text x="190" y="456" class="pill" fill="#5EE9A0">FIXABLE</text>
+  <text x="352" y="456" class="mono">sanitize --mode in-place</text>
+
+  <text x="96" y="566" class="small">Find sensitive data before commit, clean up safe findings in place, and export a sanitized copy for sharing.</text>
+</svg>

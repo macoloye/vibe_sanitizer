@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vibe-sanitizer"
+version = "0.2.0"
+description = "Make AI-generated repos safe to share with Git-aware secret and path sanitization."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "Macoloye" }
+]
+
+[project.scripts]
+vibe_sanitizer = "vibe_sanitizer.cli:main"
+vibe-sanitizer = "vibe_sanitizer.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
