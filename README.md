@@ -6,7 +6,7 @@
 
 It is designed for AI-assisted and vibe-coded repositories, which often contain secrets, local file paths, and machine-specific details that should not leave your laptop.
 
-It also supports agent-driven workflows through skills, so tools such as Codex, Claude Code, and similar coding agents can use it consistently and safely.
+It also supports agent-driven workflows through skills, so tools such as Codex, Claude Code, OpenClaw and similar coding agents can use it consistently and safely.
 
 
 ## Why
