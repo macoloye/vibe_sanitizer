@@ -8,7 +8,7 @@ version: 0.1.0
 
 Use this skill when the user wants an agent to make a repository safer before commit, before sharing, or before publishing.
 
-This skill is intended for local agent workflows in tools such as Codex, Claude Code, and similar coding agents that can read the repository and run shell commands.
+This skill is intended for local agent workflows in tools such as Codex, Claude Code, OpenClaw and similar coding agents that can read the repository and run shell commands.
 
 ## When To Use
 

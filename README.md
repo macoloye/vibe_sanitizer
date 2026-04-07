@@ -8,6 +8,8 @@ It is designed for AI-assisted and vibe-coded repositories, which often contain 
 
 It also supports agent-driven workflows through skills, so tools such as Codex, Claude Code, OpenClaw and similar coding agents can use it consistently and safely.
 
+OpenClaw and compatible agents can access the published skill through [clawhub.ai/macoloye/vibe-sanitizer](https://clawhub.ai/macoloye/vibe-sanitizer).
+
 
 ## Why
 
@@ -88,6 +90,10 @@ The repository includes a bundled skill at [`skills/vibe-sanitizer/SKILL.md`](sk
 - report findings without exposing raw secret values
 - use `sanitize --mode in-place` for safe pre-commit cleanup
 - use `export` when the goal is a shareable sanitized copy
+
+Published OpenClaw skill:
+
+- [https://clawhub.ai/macoloye/vibe-sanitizer](https://clawhub.ai/macoloye/vibe-sanitizer)
 
 Recommended agent workflow:
 
