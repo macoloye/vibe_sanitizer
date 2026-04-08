@@ -5,3 +5,4 @@ dist/
 build/
 *.pyc
 clawhub/
+.DS_Store
